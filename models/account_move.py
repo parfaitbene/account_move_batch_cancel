@@ -3,7 +3,6 @@ from odoo import models
 
 
 class AccountMove(models.Model):
-    _name = 'account.move'
     _inherit = 'account.move'
 
     def action_batch_draft(self):
@@ -16,6 +15,6 @@ class AccountMove(models.Model):
             if move.state in ('draft', 'posted'):
                 try:
                     move.button_draft()
-                except:
+                except Exception:
                     pass
                 move.button_cancel()

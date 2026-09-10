@@ -8,7 +8,7 @@
     "author": 'Parfait BENE',
     "maintainer": "",
     "website": 'https://www.parfaitbene.com',
-    "depends": ["base"],
+    "depends": ["account"],
     "data": [
     "security/ir.model.access.csv",
     "views/account_move_batch_cancel_views.xml"
