@@ -6,7 +6,7 @@
         <field name="binding_model_id" ref="model_account_move"/>
         <field name="state">code</field>
         <field name="code">
-            record.action_batch_draft()
+            action = records.action_batch_draft()
         </field>
     </record>
     
@@ -16,7 +16,7 @@
         <field name="binding_model_id" ref="model_account_move"/>
         <field name="state">code</field>
         <field name="code">
-            record.action_batch_cancel()
+            action = records.action_batch_cancel()
         </field>
     </record>
 </odoo>
