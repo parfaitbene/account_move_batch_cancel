@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.actions.server" id="ambc_batch_draft_action_server">
+        <field name="name">Revenir à l'état brouillon</field>
+        <field name="model_id" ref="model_account_move"/>
+        <field name="binding_model_id" ref="model_account_move"/>
+        <field name="state">code</field>
+        <field name="code">
+            record.action_batch_draft()
+        </field>
+    </record>
+    
+    <record model="ir.actions.server" id="ambc_batch_cancel_action_server">
+        <field name="name">Annuler les écritures</field>
+        <field name="model_id" ref="model_account_move"/>
+        <field name="binding_model_id" ref="model_account_move"/>
+        <field name="state">code</field>
+        <field name="code">
+            record.action_batch_cancel()
+        </field>
+    </record>
+</odoo>
