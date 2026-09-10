@@ -11,6 +11,8 @@ list view, instead of opening each record one by one.
   one action.
 - Notification summarizing how many records were processed.
 
+![Batch actions in the journal entries list view](static/description/ambc-demo.png)
+
 ## Usage
 
 1. Go to **Accounting > Journal Entries**.
