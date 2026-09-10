@@ -19,7 +19,7 @@ class AccountMove(models.Model):
 
         drafted = 0
         for move in self:
-            if move.state == 'posted':
+            if move.state in ('cancel', 'posted'):
                 move.button_draft()
                 drafted += 1
 
